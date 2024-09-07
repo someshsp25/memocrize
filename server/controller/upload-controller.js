@@ -20,7 +20,7 @@ const uploadImage = async (req, res) => {
             metadata: {
                 contentType: 'image/jpeg'
             },
-            public: false,
+            public: true,
         });
 
         const fileUrl = `https://storage.googleapis.com/${bucket.name}/${uniqueFileName}`;
